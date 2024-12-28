@@ -18,6 +18,9 @@
     flex-direction: column;
     text-align: center;
 }
+.HeroText{
+    margin: 0 10%;
+}
 .HeroOverlay H1{
     font-size: 5rem;
     color: cyan;
@@ -35,7 +38,7 @@
     padding: 0;
 }
 .btnHeroContainer{
-    margin-top: 20px;
+    margin: 20px 10%  0 10%;
 }
 .btnHero {
     padding: 10px 30px;
@@ -62,6 +65,7 @@
 }  
 .btnHero:hover {
     color: #000;
+    border: 3px solid cyan;
 }  
 .btnHero:hover::before {
     left: 0; 
