@@ -1,12 +1,13 @@
-.Hero{
+.Hero {
     min-height: 100vh;
     max-height: auto;
     background-image: url("../../../assets/images/HeroImg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
-}
+}  
 .HeroOverlay{
     position: absolute;
     width: 100%;

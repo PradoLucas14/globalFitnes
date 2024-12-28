@@ -1,0 +1,42 @@
+.about{
+    padding: 6% 10% 3% 10%;
+}
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.about-image {
+    width: 40%; /* El tamaño de la imagen será ajustable en función de su contenedor */
+    max-height: 600px; /* Limita la altura máxima sin distorsionar */
+    object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
+}  
+.about-text {
+    width: 50%;
+}  
+.about-text h2 {
+    font-size: 2rem;
+    color: #333;
+}  
+.about-text p {
+    font-size: 1.1rem;
+    color: #666;
+}  
+  /* Responsividad: Colocar imagen encima del texto en pantallas pequeñas */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+      text-align: center; /* Alinear el texto al centro */
+    }
+  
+    .about-image {
+      width: 80%; /* Imagen ocupa un mayor porcentaje en pantallas pequeñas */
+      max-height: 400px; /* Limita la altura de la imagen en pantallas pequeñas */
+      margin-bottom: 20px; /* Añadir espacio entre la imagen y el texto */
+    }
+  
+    .about-text {
+      width: 100%; /* El texto ocupa todo el ancho */
+    }
+  }
