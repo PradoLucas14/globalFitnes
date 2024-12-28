@@ -1,5 +1,5 @@
 .about{
-    padding: 6% 10% 3% 10%;
+    padding: 6% 10% 6% 10%;
 }
 .about-content {
     display: flex;
@@ -21,8 +21,51 @@
 }  
 .about-text p {
     font-size: 1.1rem;
-    color: #666;
+    color: #555;
 }  
+.btnAboutContainer{
+    margin-top: 35px;
+}
+.btnAbout {
+    padding: 10px 30px;
+    border-radius: 0;
+    font-size: 1.4rem;
+    color: black;
+    font-family: "Bebas Neue", serif;
+    border: 3px solid black;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.2s ease;
+}  
+.btnAbout::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: black; 
+    z-index: 0;
+    transition: left 0.5s ease;
+}  
+.btnAbout:hover {
+    color: cyan;
+    border: 3px solid black;
+}  
+.btnAbout:hover::before {
+    left: 0; 
+}  
+.btnAbout span {
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s ease; 
+  }
+  
+  .btnAbout:hover span {
+    color: cyan;
+  }
+  
   /* Responsividad: Colocar imagen encima del texto en pantallas pequeñas */
   @media (max-width: 768px) {
     .about-content {
