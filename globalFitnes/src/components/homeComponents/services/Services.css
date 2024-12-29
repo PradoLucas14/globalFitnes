@@ -1,11 +1,10 @@
 .services {
-    background-image: url("../../../assets/images/servicesImg2.jpg");
+    background-image: url("../../../assets/images/servicesImg1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     position: relative;
-    filter: grayscale(100%);
 }
 .servicesOverlay{
     position: absolute;
@@ -19,60 +18,57 @@
 }
 .servicesTitle {
     font-size: 2.5rem;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  
-  .servicesCards {
+    margin: 0px 0px 20px 0px;
+    text-align: center; 
+    color:cyan;
+}  
+.mobileServices {
+    display: none;
+    margin: 0px 10%;
+}  
+.desktopServices {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos tarjetas por fila */
-    gap: 30px;
-    width: 100%;
-    max-width: 1200px;
-  }
-  
-  .serviceCard {
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco translúcido */
-    border-radius: 10px;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    margin: 0px 10%;
+}
+.serviceCard {
+    background-color: rgba(255, 255, 255, 0.8);
     overflow: hidden;
-    display: flex;
-    flex-direction: row;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .serviceCard:hover {
-    transform: translateY(-10px); /* Efecto hover */
-  }
-  
-  .serviceImage {
-    width: 40%;
+    transition: transform 0.4s ease-in-out;
+}
+.serviceImage {
+    width: 100%;
+    height: 200px;
     object-fit: cover;
-    height: 100%;
-  }
-  
-  .serviceInfo {
-    padding: 20px;
-    width: 60%;
-  }
-  
-  .serviceTitle {
+    filter: grayscale(100%); /* Aplica el filtro blanco y negro */
+    transition: left 0.3s ease;
+}
+.serviceInfo {
+    padding: 10px 20px;
+}
+.serviceTitle {
     font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #333;
-  }
-  
-  .serviceDescription {
+    margin: 0px 0px 10px 0px;
+    color: black;
+}  
+.serviceDescription {
     font-size: 1rem;
     color: #666;
-  }
-  
-  /* Responsividad */
+}  
+  /* Ajuste para pantallas móviles */
   @media (max-width: 768px) {
-    .servicesCards {
-      grid-template-columns: 1fr; /* Una tarjeta por fila en pantallas pequeñas */
+    .desktopServices {
+      display: none; /* Ocultamos la vista sin carrusel en pantallas móviles */
     }
-    .serviceImage {
-      width: 100%; /* La imagen ocupa todo el ancho en dispositivos pequeños */
+  
+    .mobileServices {
+      display: block; /* Mostramos el carrusel en pantallas móviles */
+    }
+    .serviceCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
   }
