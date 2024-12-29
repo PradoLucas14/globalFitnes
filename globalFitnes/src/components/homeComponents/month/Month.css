@@ -2,67 +2,62 @@
     padding: 4% 10% 6% 10%;
     background-color: #fff;
     text-align: center;
-  }
-  
-  .monthTitle {
+}  
+.monthTitle {
     font-size: 2rem;
     margin-bottom: 30px;
     color: black;
-  }
-  
-  .plansContainer {
+}  
+.plansContainer {
     display: flex;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
-  }
-  
-  .planCard {
+}  
+.planCard {
     background-color: black;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 300px;
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .planCard:hover {
+}  
+.planCard:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .planTitle {
+}  
+.planTitle {
     font-size: 1.5rem;
     color: cyan;
     margin-bottom: 10px;
-  }
-  
-  .planPrice {
+}  
+.planPrice {
     font-size: 1.8rem;
     font-weight: bold;
     color: #fff;
     margin-bottom: 20px;
-  }
-  
-  .planFeatures {
+}  
+.planFeatures {
     list-style: none;
     padding: 0;
-  }
-  
-  .planFeature {
+}  
+.planFeature {
     font-size: 1rem;
     color: #999;
     margin-bottom: 10px;
-  }
+}
   
   @media (max-width: 768px) {
     .plansContainer {
       flex-direction: column;
       align-items: center;
     }
-  
     .planCard {
       width: 90%;
     }
+    .planCard:hover {
+        transform: none;
+        box-shadow: none;
+    } 
   }
   
