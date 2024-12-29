@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Services.css";
 
 function Services() {
-  // Datos de los servicios que ofrece el gimnasio
   const servicesData = [
     {
       imgSrc: "https://media.istockphoto.com/id/529255833/es/foto/grupo-de-hombres-con-pesas-en-el-gimnasio.jpg?s=612x612&w=0&k=20&c=BTwtnNV6uDvPthQYXUyU2jhKqPnXDYRJSA0aNv6SGmc=",
@@ -29,16 +28,15 @@ function Services() {
     },
   ];
 
-  // Configuración del carrusel
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1, // Muestra una tarjeta por vez
-    slidesToScroll: 1, // Desplaza una tarjeta por vez
+    slidesToShow: 1, 
+    slidesToScroll: 1, 
     responsive: [
       {
-        breakpoint: 768, // Configuración para pantallas móviles
+        breakpoint: 768, 
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -65,7 +63,7 @@ function Services() {
            </div>
           ))}
         </div>
-        {/* Carrusel para pantallas móviles */}
+
         <div className="mobileServices">
           <Slider className="slider" {...settings}>
             {servicesData.map((service, index) => (
