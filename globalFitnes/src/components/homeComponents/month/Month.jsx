@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 import './Month.css';
 
 function Month() {
@@ -26,6 +28,7 @@ function Month() {
       <div className="plansContainer">
         {plans.map((plan, index) => (
           <div key={index} className="planCard">
+            <FontAwesomeIcon icon={faDumbbell} className="planIcon" />
             <h3 className="planTitle">{plan.title}</h3>
             <p className="planPrice">{plan.price}</p>
             <ul className="planFeatures">
@@ -41,4 +44,3 @@ function Month() {
 }
 
 export default Month;
-

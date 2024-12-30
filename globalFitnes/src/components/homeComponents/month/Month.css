@@ -1,12 +1,13 @@
 .month {
-    padding: 4% 10% 6% 10%;
+    padding: 6% 10% 7% 10%;
     background-color: #fff;
     text-align: center;
 }  
 .monthTitle {
     font-size: 2rem;
-    margin-bottom: 30px;
+    margin: 0 0 30px 0;
     color: black;
+    padding: 0;
 }  
 .plansContainer {
     display: flex;
@@ -23,9 +24,17 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }  
 .planCard:hover {
-    transform: translateY(-10px);
+    transform: translateY(-7px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }  
+.planIcon {
+    font-size: 3.5rem;
+    color: cyan;
+    border: 3px solid #fff;
+    margin-top: 10px;
+    border-radius: 100%;
+    padding: 10px;
+  }
 .planTitle {
     font-size: 1.5rem;
     color: cyan;

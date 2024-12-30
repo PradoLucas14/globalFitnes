@@ -29,7 +29,7 @@
     margin: 20px 10%;
 }  
 .serviceCard {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(300, 300, 300, 0.9);
     overflow: hidden;
     transition: transform 0.4s ease-in-out;
 }  
@@ -45,12 +45,12 @@
 }  
 .serviceTitle {
     font-size: 1.5rem;
-    color: #333;
+    color: black;
     margin: 0;  
 }  
 .serviceDescription {
     font-size: 1rem;
-    color: #555;
+    color: #444;
 }  
 .mobileServices {
     display: none;
